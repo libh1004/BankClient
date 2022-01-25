@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="451c720b-1594-411c-bdaf-93cf841f35d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5566/BankService/BankService?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BankService.xsd" MetadataType="Schema" ID="ccae937a-b573-4910-b62b-ed903d1f9ac6" SourceId="1" SourceUrl="http://localhost:5566/BankService/BankService?xsd=xsd2" />
+    <MetadataFile FileName="BankService1.xsd" MetadataType="Schema" ID="b49443aa-1379-45c5-9ed5-a912a2506a05" SourceId="1" SourceUrl="http://localhost:5566/BankService/BankService?xsd=xsd0" />
+    <MetadataFile FileName="BankService2.xsd" MetadataType="Schema" ID="3c93c7b4-6c8d-4d96-b402-9277d92b4eaf" SourceId="1" SourceUrl="http://localhost:5566/BankService/BankService?xsd=xsd1" />
+    <MetadataFile FileName="BankService.wsdl" MetadataType="Wsdl" ID="f9232193-e0e5-45bd-91a0-6f11bbc370de" SourceId="1" SourceUrl="http://localhost:5566/BankService/BankService?wsdl" />
+    <MetadataFile FileName="BankService1.wsdl" MetadataType="Wsdl" ID="4829469e-0059-486b-9a7f-2a4b0471629c" SourceId="1" SourceUrl="http://localhost:5566/BankService/BankService?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

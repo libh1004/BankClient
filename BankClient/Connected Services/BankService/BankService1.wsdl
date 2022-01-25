@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="BankService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="BankService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="BankService/Imports">
+      <xsd:import schemaLocation="http://localhost:5566/BankService/BankService?xsd=xsd0" namespace="BankService" />
+      <xsd:import schemaLocation="http://localhost:5566/BankService/BankService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5566/BankService/BankService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BankService.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBankService_GetInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfo" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_GetInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_WithDraw_InputMessage">
+    <wsdl:part name="parameters" element="tns:WithDraw" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_WithDraw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WithDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_Deposit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Deposit" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_Deposit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DepositResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_Tranfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:Tranfer" />
+  </wsdl:message>
+  <wsdl:message name="IBankService_Tranfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TranferResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBankService">
+    <wsdl:operation name="GetInfo">
+      <wsdl:input wsaw:Action="BankService/IBankService/GetInfo" message="tns:IBankService_GetInfo_InputMessage" />
+      <wsdl:output wsaw:Action="BankService/IBankService/GetInfoResponse" message="tns:IBankService_GetInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WithDraw">
+      <wsdl:input wsaw:Action="BankService/IBankService/WithDraw" message="tns:IBankService_WithDraw_InputMessage" />
+      <wsdl:output wsaw:Action="BankService/IBankService/WithDrawResponse" message="tns:IBankService_WithDraw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <wsdl:input wsaw:Action="BankService/IBankService/Deposit" message="tns:IBankService_Deposit_InputMessage" />
+      <wsdl:output wsaw:Action="BankService/IBankService/DepositResponse" message="tns:IBankService_Deposit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Tranfer">
+      <wsdl:input wsaw:Action="BankService/IBankService/Tranfer" message="tns:IBankService_Tranfer_InputMessage" />
+      <wsdl:output wsaw:Action="BankService/IBankService/TranferResponse" message="tns:IBankService_Tranfer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
